@@ -2,11 +2,11 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
-    font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 body {
-    background: #eaeaea;
+  background: #999;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -39,15 +39,11 @@ body {
 /* Customize container */
 @media (min-width: 768px) {
   .container {
-    max-width: 780px;
+    max-width: 880px;
 
 
-      padding: 30px 50px;
-      background: #fff;
-      border: 1px solid #cccccc;
-      -moz-box-shadow: 0 0 10px #bbb;
-      -webkit-box-shadow: 0 0 10px #bbb;
-      box-shadow: 0 0 10px #bbb;
+    padding: 30px 50px;
+    background: #fff;
   }
 }
 .container-narrow > hr {
