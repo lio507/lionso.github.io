@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-63204662-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-63204662-1');
+</script>
+
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -10,639 +20,336 @@
     <meta content="noindex" name="robots">
     <title>Lionso C.Z. / CV</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
-    <!-- Custom styles for this template -->
-    <link href="/theme_assets/css/custom.css" rel="stylesheet">
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300italic' rel='stylesheet'
-          type='text/css'>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<style>
+
+.gallery-title
+{
+    font-size: 36px;
+    color: #0b58a0;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #0b58a0;
+    border-radius: 5px;
+    text-align: center;
+    color: #0b58a0;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #0b58a0;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #0b58a0;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #0b58a0;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 50px;
+}
+
+.box {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  top: 15px;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.about {
+    color: #5e5e5e;
+  }
+
+
+
+
+  h1 {
+    font-family: system-ui, sans-serif;
+  /*font-size: calc( 1em + 30vmin );*/
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: tomato;
+  
+  --x-offset: -0.0625em;
+  --y-offset: 0.0625em;
+  --stroke: 0.025em;
+  --background-color: white;
+  --stroke-color: lightblue;
+  
+  text-shadow: 
     
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-63204662-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    var(--x-offset)
+    var(--y-offset)
+    0px
+    var(--background-color), 
+    
+    calc( var(--x-offset) - var(--stroke) )
+    calc( var(--y-offset) + var(--stroke) )
+    0px
+    var(--stroke-color);
+  
+}
+/* for browsers that support spread, added in
+https://drafts.csswg.org/css-text-decor-4/#text-shadow-property
+currently: none browsers! none of them!
+I can't even find a test: 
+https://wpt.fyi/results/css/css-text-decor */
+@supports ( text-shadow: 1px 1px 1px 1px black ) {
+  h1 {
+    text-shadow:
+      
+      var(--x-offset)
+      var(--y-offset)
+      0px
+      0px
+      var(--background-color), 
+      
+      var(--x-offset) 
+      var(--y-offset)
+      var(--stroke)
+      0px
+      var(--stroke-color);
+    
+  }
+}
 
-  gtag('config', 'UA-63204662-1');
-</script>
+  .myname{
+  }
+@media (min-width: 768px) {
+  .about {
+    font-size: 18px;
+    margin: 15px 90px;
+  }
+}
+
+.rounded{
+    overflow: hidden;
+    -webkit-border-radius: 180px;
+    display: block;
+    border: 4px solid #FFF;
+}
+</style>
+
 </head>
 
 <body>
 
-<div class="container">
-
-
-    <hr>
-
-
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="active" role="presentation"><a aria-controls="home" aria-expanded="true" data-toggle="tab" href="#home"
-                                                  id="home-tab" role="tab">Resumen</a></li>
-        <li role="presentation"><a aria-controls="profile" data-toggle="tab" href="#profile" id="profile-tab"
-                                   role="tab">Portafolio</a></li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-
-
-
-        <div aria-labelledBy="home-tab" class="tab-pane fade in active" id="home" role="tabpanel">
-
-
-            <div class="row">
-
-
-                <div class="col-md-4" style="background-color:#fafafa;">
-
-                    <p>&nbsp;</p>
-                    <img class="img-responsive center-block" src="/theme_assets/profile_img/lionso.png">
-                    <h3 style="text-transform: uppercase;font-weight: bolder;">Lionso Concepcion</h3>
-                    <p>
-
-                    <div style="font-size: 18px;"><span style="color:#808080;">Edad......:</span> 39 años</div>
-                    <div style="font-size: 18px;"><span style="color:#808080;">Teléfono.:</span> 6628-6249</div>
-                    <div style="font-size: 18px;"><span style="color:#808080;">Email.....:</span> lionso.cz@gmail.com</div>
-                    </p>
-                    <p>&nbsp;</p>
-
-
-                    <h3>Habilidades técnicas: <i class="fa fa-angle-down"></i></h3>
-                        <small>Conocimiento mayor de 90% de uso</small>
-
-                    <p>&nbsp;</p>
-                    <dl>
-                        <dt>Idioma Inglés</dt>
-                        <dd class="text-muted">&nbsp;Intermedio</dd>
-
-                        <dt>Lenguages de programación web</dt>
-                        <dd class="text-muted">&nbsp;PHP</dd>
-
-                        <dt>Software de diseño y video</dt>
-                        <dd class="text-muted">&nbsp;Photoshop / InDesign / Filmora</dd>
-
-                        <dt>PHP frameworks</dt>
-                        <dd class="text-muted">&nbsp;Laravel, Symfony</dd>
-
-                        <dt>Template Engines</dt>
-                        <dd class="text-muted">&nbsp;Blade, Twig, Smarty</dd>
-
-                        <dt>Bases de datos relacionales</dt>
-                        <dd class="text-muted">&nbsp;MySQL, sqlite</dd>
-
-                        <dt>Servidores web</dt>
-                        <dd class="text-muted">&nbsp;Apache, Nginx</dd>
-
-                        <dt>Librerias de Javascript</dt>
-                        <dd class="text-muted">&nbsp;Vue, React, jQuery, MooTools</dd>
-
-                        <dt>"Responsive web design" frameworks</dt>
-                        <dd class="text-muted">&nbsp;Bootstrap, Foundation</dd>
-
-                        <dt>Sistemas para control de versiones</dt>
-                        <dd class="text-muted">&nbsp;Git</dd>
-
-                        <dt>Hardware</dt>
-                        <dd class="text-muted">&nbsp;Montaje/Desmontaje de PCs escritorio</dd>
-                    </dl>
-
-                    <p>&nbsp;</p>
-
-                    <h3>Estudios <i class="fa fa-angle-down"></i></h3>
-
-                    <p>&nbsp;</p>
-
-                    <div class="row">
-
-                        <div class="col-md-12">
-                            <div class="text-muted">ene 2001 - sep 2007</div>
-                            <strong>Universidad Santa Maria La Antigua</strong><br> (Facultad de Ciencias
-                            Administrativas)
-                            <div class="text-muted"><em>Licenciatura en Turismo (Graduado)</em></div>
-                        </div>
-                    </div>
-
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="text-muted">feb 1995 - dic 2000</div>
-                            <strong>Instituto Fermin Naudeau</strong>
-                            <div class="text-muted"><em>Bachiller en Ciencias (Graduado)</em></div>
-                        </div>
-                    </div>
-
-
-                    <p>&nbsp;</p>
-
-                    <p>&nbsp;</p>
-
-                </div>
-
-
-                <div class="col-md-8">
-
-
-            <div class="page-header">
-                <h2><i class="fa fa-info-circle"></i> Resumen
-                    <small></small>
-                </h2>
-            </div>
-
-            <h3>Experiencia <i class="fa fa-angle-down"></i></h3>
-
-            <p>&nbsp;</p>
-            <div class="row">
-
-                <div class="col-md-7"><strong>PanAmerican Travel</strong>
-                    <div class="text-muted"><em>Desarrolador Web y Community Manager</em></div>
-                </div>
-                <div class="col-md-5 text-right text-muted">jul 2015 - may 2022<br>Cuba - Panam&aacute;
-                    <br>&nbsp;<br>
-                </div>
-
-            </div>
-            <ul>
-                <li>Creación de campañas de promoción con Google Ads y Meta Ads Manager
-                <li>Diseño de posts para redes sociales, flyers, roll up banners y catálogos de productos</li>
-                <li>Rediseño de websites de viajes de la empresa</li>
-                <li>Elaboración de microsites, landing pages y campañas de newsletters</li>
-                <li>Mantenimiento correctivo/preventivo de hardware y software</li>
-
-            </ul>
-
-
-            <hr>
-            <div class="row">
-
-                <div class="col-md-6"><strong>WontonMedia</strong>
-                    <div class="text-muted"><em>Diseñador / Programador Web</em></div>
-                </div>
-                <div class="col-md-6 text-right text-muted">may 2008 - mar 2015<br>Mexico - Panam&aacute;
-                    <br>&nbsp;<br>
-                </div>
-            </div>
-            <ul>
-                <li>Mantenimiento de los websites y scripts desarrollados por colegas.</li>
-                <li>Diseño de sitios responsivos ( Responsive web design ), empleando los frameworks Bootstrap y
-                    Foundation.
-                </li>
-                <li>Desarrollo de aplicaciones web para administrar contenido multimedia ( CMS )</li>
-                <li>Desarrollo de aplicaciones Web para administrar programas de afiliados.</li>
-            </ul>
-
-
-            <hr>
-
-            <div class="row">
-
-                <div class="col-md-6"><strong>Two Dogs Media</strong>
-
-                    <div class="text-muted"><em>Diseñador / Programador Web</em></div>
-                </div>
-                <div class="col-md-6 text-right text-muted">dic 2004 - may 2008<br>Panam&aacute;
-                    <br>&nbsp;<br>
-                </div>
-            </div>
-            <ul>
-                <li>Diseñador Web: Empleando Adobe Photoshop y la posterior conversion/edición de HTML desarrollé
-                    sitios de entretenimiento para adultos así como otros medios de promoción( banners, galerias,...
-                    )
-                    para generar tráfico hacia estos. De igual forma editaba fotos de modelos en grandes volúmenes.
-                </li>
-                <li>Programador Web: Por medio de la conocida plataforma open-source web LAMPP
-                    ( Linux, Apache, MySQL y PHP ) estuve a cargo de desarrollar y mantener aplicaciones web de las
-                    cuales
-                    dependían los sitios de pago, tales como: soluciones GEO-IP, procesadores de pagos,
-                    CMS ( sistema de administración de contenidos ), monitoreo/tracking de afiliados y de soporte
-                    para clientes externos.
-                </li>
-            </ul>
-
-                    <hr>
-
-            <div id="content-more-experiences">
-                <div class="row">
-                    <div class="col-md-7"><strong>Hotel El Panamá</strong>
-
-                        <div class="text-muted"><em>Asistente y consierge del Centro de Negocios</em></div>
-                    </div>
-                    <div class="col-md-5 text-right text-muted">ene 2004 - feb 2004<br>Panam&aacute;
-                        <br>&nbsp;<br>
-                    </div>
-                </div>
-                <ul>
-                    <li><em class="text-warning"><i class="fa fa-exclamation-triangle"></i> Mi presencia en el Hotel
-                        El Panamá fue en calidad de pasante, por un período de 240 horas de práctica
-                        requeridas para cumplir con los créditos de la Licenciatura en Turismo que cursaba en el
-                        momento.</em><br>
-                        - Atención a huéspedes del hotel ( brindar información sobre el hotel y turismo en Panam&aacute;,
-                        tomar reservaciones y uso general del sistema Fidelio ).
-                    </li>
-                </ul>
-
-
-
-                <hr>
-
-                <div class="row">
-                    <div class="col-md-6"><strong>Rolo Cabins</strong>
-
-                        <div class="text-muted"><em>Reservas por Internet y Consejero virtual</em></div>
-                    </div>
-                    <div class="col-md-6 text-right text-muted">feb 2003 - jun 2003<br>Panam&aacute;
-                        <br>&nbsp;<br>
-                    </div>
-                </div>
-                <ul>
-                    <li>Luego de haber desarrollado el website de esta empresa me encargué de atender las
-                        reservaciones via email.
-                    </li>
-                    <li>Posicioné el dominio de esta empresa en los mejores buscadores y revistas de surfing de la
-                        época.
-                    </li>
-                </ul>
-
-                <hr>
-                <div class="row">
-                    <div class="col-md-6"><strong>USMA</strong>
-
-                        <div class="text-muted"><em>Asistente de Laboratorios de Informática</em></div>
-                    </div>
-                    <div class="col-md-6 text-right text-muted">ene 2002 - ago 2002<br>Panam&aacute;
-                        <br>&nbsp;<br>
-                    </div>
-                </div>
-                <ul>
-                    <li><em class="text-warning"><i class="fa fa-exclamation-triangle"></i> Bajo un modelo de beca
-                        compensatoria ( abono a matricula ) por ocho meses.</em><br>
-                        - Mantenimiento preventivo de hardware y software en los distintos laboratorios de la
-                        universidad.
-                    </li>
-                </ul>
-
-            </div>
-            <!-- /content-more-experiences -->
-
-
-            <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-
-            <button class="btn btn-primary btn-lg btn-block btn-view-portfolio" type="button">Ver mi portafolio de
-                trabajos
-                <i class="fa fa-angle-double-right"></i></button>
-
-            <p>&nbsp;</p>
-
-        </div>
-
-
-
-            </div>
-
-        </div>
-
-        <div aria-labelledBy="profile-tab" class="tab-pane fade" id="profile" role="tabpanel">
-
-
-            <div class="page-header">
-                <h2><i class="fa fa-briefcase"></i> Portafolio
-                    <small>Selección de 100% de desarrollo</small>
-                </h2>
-            </div>
-           <!-- <div class="alert alert-warning" role="alert">Esta selección solo destaca los sitios en donde he estado
-                a cargo desde el wireframe, diseño,
-                maquetación y programación en php <em>(donde sea aplicable)</em> es decir al 100% del producto final
-            </div>-->
-
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="rolocabins"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/posts/PA-CR.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Redes sociales:</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="18mg"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/posts/lgbt-habana.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Redes sociales:</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="rolocabins"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/posts/bijao1.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Redes sociales:</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="18mg"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/posts/sanblas.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Redes sociales:</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="rolocabins"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/posts/promo2.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Redes sociales:</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="18mg"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/posts/volcan2.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Redes sociales:</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="rolocabins"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/flyers/expoturismo.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Volantes:</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="18mg"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/flyers/restpromo.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Volantes:</h5>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="rolocabins"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/websites/panamericantravelling.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Websites: viajes y turismo</h5>
-                            <span><i class="fa fa-calendar"></i> Fecha: 2022</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="18mg"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/websites/allwaystravelling.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Websites: viajes y turismo</h5>
-                            <span><i class="fa fa-calendar"></i> Fecha: 2019</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="rolocabins"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/websites/ways2panama.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Websites: viajes y turismo</h5>
-                            <span><i class="fa fa-calendar"></i> Fecha: 2016</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="18mg"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/websites/freetouch1.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Websites: viajes y turismo</h5>
-                            <span><i class="fa fa-calendar"></i> Fecha: 2016</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="rolocabins"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/websites/solteros1.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Websites: viajes y turismo</h5>
-                            <span><i class="fa fa-calendar"></i> Fecha: 2016</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="18mg"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/websites/solteros2.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Websites: viajes y turismo</h5>
-                            <span><i class="fa fa-calendar"></i> Fecha: 2016</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="18mg"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/websites/18mag_.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Websites: multi modelos</h5>
-                            <span><i class="fa fa-calendar"></i> Fecha: 2014</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="redcn"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/websites/redcn_.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Websites: multi modelos de Rusia</h5>
-                            <span><i class="fa fa-calendar"></i> Fecha: 2006</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="rolocabins"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/websites/rolocabinsv3_.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Websites: Hostal para surfers v3</h5>
-                            <span><i class="fa fa-calendar"></i> Fecha: 2008</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="centrotagua"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/websites/centrotagua_.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Websites: Centro de Capacitación Prof. (ONG)</h5>
-                            <span><i class="fa fa-calendar"></i> Fecha: 2006</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="estereoazul"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/websites/estereoazul_.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Websites: Emisora radial</h5>
-                            <span><i class="fa fa-calendar"></i> Fecha: 2004</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="quiuboestereo"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/websites/quiuboestereo_.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Websites: Emisora radial</h5>
-                            <span><i class="fa fa-calendar"></i> Fecha: 2004</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="rolocabins"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/websites/rolocabinsv2_.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Websites: Hostal para surfers v2</h5>
-                            <span><i class="fa fa-calendar"></i> Fecha: 2004</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="thumbnail" style="background-color: #eee;">
-                        <img alt="rolocabins"
-                             class="img-thumbnail"
-                             src="/theme_assets/portfolio/websites/rolocabinsv1_.jpg">
-
-                        <div class="caption" style="background-color: #323232;color: #fff;">
-                            <h5>Websites: Hostal para surfers v1</h5>
-                            <span><i class="fa fa-calendar"></i> Fecha: 2003</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-
-            <button class="btn btn-primary btn-lg btn-block btn-view-cv" type="button">Ver mi hoja de vida
-                <i class="fa fa-angle-double-right"></i></button>
-
-            <p>&nbsp;</p>
-
-        </div>
-
-
-    </div>
-
-
-    <footer class="footer">
-        <p>&copy; Lionso C. Z. 2022</p>
-    </footer>
-
-</div>
 <!-- /container -->
 
+<header style="background-color: #eee;">
+    <div class="container">
+        <div class="row">
+        <div class="col-xs-12">
+            <p>&nbsp;</p>
+                    <img class="img-responsive center-block rounded" src="/theme_assets/profile_img/lionso.png">
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+                    <h1 class="myname">Lionso Concepcion</h1>
 
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="/theme_assets/js/ie10-viewport-bug-workaround.js"></script>
+                    <p style="text-align: center; margin-bottom: 50px;" class="about">
+                        Soy un Diseñador web y programador desde el 2004 con experiencia en marketing digital; 
+                        orientado al trabajo en equipo y mejoramiento continuo, así como con facilidad de expresión oral y escrita.
+                    </p>  
 
+        </div>
+        </div>
+    </div>
+
+</header>
+<section>
+    <div class="container">
+        <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h4 class="gallery-title" style="margin-top: 80px;">Portafolio</h4>
+        </div>
+
+        <div style="text-align: center;">
+            <button class="btn btn-default filter-button" data-filter="all">Todos</button>
+            <button class="btn btn-default filter-button" data-filter="flyers">Flyers</button>
+            <button class="btn btn-default filter-button" data-filter="social">Redes sociales</button>
+            <button class="btn btn-default filter-button" data-filter="websites">Websites</button>
+        </div>
+        <br/>
+
+
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter social">
+                <img src="/theme_assets/portfolio/posts/PA-CR.jpg" class="img-responsive center-block box">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter social">
+                <img src="/theme_assets/portfolio/posts/lgbt-habana.jpg" class="img-responsive center-block box">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter social">
+                <img src="/theme_assets/portfolio/posts/vacutur.jpg" class="img-responsive center-block box">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter social">
+                <img src="/theme_assets/portfolio/posts/giveaway.jpg" class="img-responsive center-block box">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter social">
+                <img src="/theme_assets/portfolio/posts/playablanca.jpg" class="img-responsive center-block box">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter social">
+                <img src="/theme_assets/portfolio/posts/bijao1.jpg" class="img-responsive center-block box">
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter social">
+                <img src="/theme_assets/portfolio/posts/volcan2.jpg" class="img-responsive center-block box">
+            </div>
+            
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter social">
+                <img src="/theme_assets/portfolio/posts/promo2.jpg" class="img-responsive center-block box">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter social">
+                <img src="/theme_assets/portfolio/posts/sanblas.jpg" class="img-responsive center-block box">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter social">
+                <img src="/theme_assets/portfolio/posts/cusquena.jpg" class="img-responsive center-block box">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter social">
+                <img src="/theme_assets/portfolio/posts/casco.jpg" class="img-responsive center-block box">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter social">
+                <img src="/theme_assets/portfolio/posts/chiriqui.jpg" class="img-responsive center-block box">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter flyers">
+                <img src="/theme_assets/portfolio/flyers/expoturismo.jpg" class="img-responsive center-block box">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter flyers">
+                <img src="/theme_assets/portfolio/flyers/restpromo.jpg" class="img-responsive center-block box">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter flyers">
+                <img src="/theme_assets/portfolio/flyers/bodas.jpg" class="img-responsive center-block box">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter websites">
+                <img src="/theme_assets/portfolio/websites/panamericantravelling.jpg" class="img-responsive center-block box">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter websites">
+                <img src="/theme_assets/portfolio/websites/allwaystravelling.jpg" class="img-responsive center-block box">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter websites">
+                <img src="/theme_assets/portfolio/websites/ways2panama.jpg" class="img-responsive center-block box">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter websites">
+                <img src="/theme_assets/portfolio/websites/freetouch1.jpg" class="img-responsive center-block box">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter websites">
+                <img src="/theme_assets/portfolio/websites/landing1.jpg" class="img-responsive center-block box">
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter websites">
+                <img src="/theme_assets/portfolio/websites/solteros2.jpg" class="img-responsive center-block box">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter websites">
+                <img src="/theme_assets/portfolio/websites/oakbill.jpg" class="img-responsive center-block box">
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter websites">
+                <img src="/theme_assets/portfolio/websites/chiva.jpg" class="img-responsive center-block box">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter websites">
+                <img src="/theme_assets/portfolio/websites/rolocabinsv3_.jpg" class="img-responsive center-block box">
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter websites">
+                <img src="/theme_assets/portfolio/websites/panchodog.jpg" class="img-responsive center-block box">
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter websites">
+                <img src="/theme_assets/portfolio/websites/centrotagua_.jpg" class="img-responsive center-block box">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter websites">
+                <img src="/theme_assets/portfolio/websites/rolocabinsv2_.jpg" class="img-responsive center-block box">
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+      <p class="text-muted" style="margin-top: 20px;text-align: center;">Lionso Concepcion. / 2023</p> 
+    </div>
+  </footer>
 <script>
 
-    // A $( document ).ready() block.
-    $(document).ready(function () {
-        $('.btn-more-experiences').click(function () {
-            $(this).hide();
-            $('#content-more-experiences').fadeIn('fast');
-        });
 
-        $('#myTab a').click(function (e) {
-            e.preventDefault()
-            $(this).tab('show')
-        })
+$(document).ready(function(){
 
-        $('.btn-view-portfolio').click(function () {
-            $('#myTab a[href="#profile"]').tab('show');
-            $("html, body").animate({scrollTop: 0}, "fast");
-            return false;
-        });
-        $('.btn-view-cv').click(function () {
-            $('#myTab a[href="#home"]').tab('show');
-            $("html, body").animate({scrollTop: 0}, "fast");
-            return false;
-        });
-    });
+$(".filter-button").click(function(){
+    var value = $(this).attr('data-filter');
+    
+    if(value == "all")
+    {
+        //$('.filter').removeClass('hidden');
+        $('.filter').show('1000');
+    }
+    else
+    {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+        $(".filter").not('.'+value).hide('3000');
+        $('.filter').filter('.'+value).show('3000');
+        
+    }
+});
 
+if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
 </script>
-
 </body>
 </html>
