@@ -163,6 +163,9 @@ https://wpt.fyi/results/css/css-text-decor */
 
 <body>
 
+
+
+
     <!-- /container -->
 
     <header style="background-color: #eee;">
@@ -195,11 +198,12 @@ https://wpt.fyi/results/css/css-text-decor */
                 <div style="text-align: center;">
                     <button class="btn btn-default filter-button" data-filter="all">Todos</button>
                     <button class="btn btn-default filter-button" data-filter="flyers">Flyers</button>
-                    <button class="btn btn-default filter-button" data-filter="social">Redes sociales</button>
+                    <button class="btn btn-default filter-button" data-filter="social">Posts</button>
                     <button class="btn btn-default filter-button" data-filter="websites">Websites</button>
+                    <button class="btn btn-default filter-button" data-filter="reels">Reels</button>
+
                 </div>
                 <br />
-
 
 
                 <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter social">
@@ -293,27 +297,6 @@ https://wpt.fyi/results/css/css-text-decor */
                             data-src="/theme_assets/portfolio/posts/chiriqui.jpg"></a>
                 </div>
 
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter flyers">
-                    <a href="/theme_assets/portfolio/flyers/expoturismo.jpg" data-toggle="lightbox"
-                        data-footer="Material impreso para ferias">
-                        <img class="lazy img-responsive center-block box"
-                            data-src="/theme_assets/portfolio/flyers/expoturismo.jpg"></a>
-                </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter flyers">
-                    <a href="/theme_assets/portfolio/flyers/restpromo.jpg" data-toggle="lightbox"
-                        data-footer="Roll Up banner">
-                        <img class="lazy img-responsive center-block box"
-                            data-src="/theme_assets/portfolio/flyers/restpromo.jpg"></a>
-                </div>
-
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter flyers">
-                    <a href="/theme_assets/portfolio/flyers/bodas.jpg" data-toggle="lightbox"
-                        data-footer="Material impreso para ferias">
-                        <img class="lazy img-responsive center-block box"
-                            data-src="/theme_assets/portfolio/flyers/bodas.jpg"></a>
-                </div>
-
                 <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter websites">
                     <a href="/theme_assets/portfolio/websites/panamericantravelling.jpg" data-toggle="lightbox"
                         data-footer="Website: Viajes">
@@ -393,6 +376,47 @@ https://wpt.fyi/results/css/css-text-decor */
                         <img class="lazy img-responsive center-block box"
                             data-src="/theme_assets/portfolio/websites/rolocabinsv2_.jpg"></a>
                 </div>
+
+
+
+                
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter reels" style="text-align: center;">
+                    <iframe width="225" height="400" src="https://www.youtube.com/embed/BixfjUobWnk?rel=0" title="Escudo de Veraguas / Reel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter reels" style="text-align: center;">
+                    <iframe width="225" height="400" src="https://www.youtube.com/embed/Uhv_NE39Lfo?rel=0" title="Escudo de Veraguas / Reel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter reels" style="text-align: center;">
+                    <iframe width="225" height="400" src="https://www.youtube.com/embed/qZ0WM3Dkhu4?rel=0" title="Escudo de Veraguas / Reel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                </div>
+
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter flyers">
+                    <a href="/theme_assets/portfolio/flyers/expoturismo.jpg" data-toggle="lightbox"
+                        data-footer="Material impreso para ferias">
+                        <img class="lazy img-responsive center-block box"
+                            data-src="/theme_assets/portfolio/flyers/expoturismo.jpg"></a>
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter flyers">
+                    <a href="/theme_assets/portfolio/flyers/restpromo.jpg" data-toggle="lightbox"
+                        data-footer="Roll Up banner">
+                        <img class="lazy img-responsive center-block box"
+                            data-src="/theme_assets/portfolio/flyers/restpromo.jpg"></a>
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter flyers">
+                    <a href="/theme_assets/portfolio/flyers/bodas.jpg" data-toggle="lightbox"
+                        data-footer="Material impreso para ferias">
+                        <img class="lazy img-responsive center-block box"
+                            data-src="/theme_assets/portfolio/flyers/bodas.jpg"></a>
+                </div>
             </div>
         </div>
     </section>
@@ -437,9 +461,7 @@ https://wpt.fyi/results/css/css-text-decor */
         $('.lazy').Lazy({
             effect: "fadeIn",
             effectTime: 2000,
-            threshold: 0,
-            enableThrottle: true,
-            throttle: 550         
+            threshold: 0       
         });
 
     </script>
