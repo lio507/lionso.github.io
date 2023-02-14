@@ -49,7 +49,7 @@
         }
 
         .filter-button {
-            font-size: 18px;
+            font-size: 14px;
             border: 1px solid #0b58a0;
             border-radius: 5px;
             text-align: center;
@@ -59,7 +59,7 @@
         }
 
         .filter-button:hover {
-            font-size: 18px;
+            font-size: 14px;
             border: 1px solid #0b58a0;
             border-radius: 5px;
             text-align: center;
@@ -139,7 +139,6 @@ https://wpt.fyi/results/css/css-text-decor */
             }
         }
 
-        .myname {}
 
         @media (min-width: 768px) {
             .about {
@@ -159,7 +158,18 @@ https://wpt.fyi/results/css/css-text-decor */
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.0/ekko-lightbox.css"
         integrity="sha512-BVGjJ8Wc+4E8JKyoqnbAdqEnglgKerD/1rMioxpitveJM3hC0MNyuKSVZpb02cUDzERc5tWFSOXmziXylXMv2g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
+    
+        <script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
+        <script>
+             document.addEventListener('DOMContentLoaded', () => {
+                 const player = Plyr.setup('.js-player');
+             });
+         </script>
 </head>
+
 
 <body>
 
@@ -378,31 +388,48 @@ https://wpt.fyi/results/css/css-text-decor */
                 </div>
 
                 <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter reels"
-                    style="text-align: center;">
-                    <iframe width="100%" height="375" src="https://www.youtube.com/embed/BixfjUobWnk?rel=0"
-                        title="Escudo de Veraguas / Reel" frameborder="0"
-                        allow="accelerometer; autoplay; allowfullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                style="text-align: center;">
 
-                </div>
+                <div class="js-player" id="player">
+                    <iframe width="100%" height="300" 
+                      src="https://www.youtube.com/embed/BixfjUobWnk?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                      allowfullscreen
+                      allowtransparency
+                      allow="autoplay"
+                    ></iframe>
+                  </div>
+                
 
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter reels"
-                    style="text-align: center;">
-                    <iframe width="100%" height="375" src="https://www.youtube.com/embed/Uhv_NE39Lfo?rel=0"
-                        title="Escudo de Veraguas / Reel" frameborder="0"
-                        allow="accelerometer; autoplay;  allowfullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+            </div>
 
-                </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter reels"
+                style="text-align: center;">
+                
+                    <div class="js-player" id="player">
+                        <iframe width="100%" height="300" 
+                          src="https://www.youtube.com/embed/Uhv_NE39Lfo?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                          allowfullscreen
+                          allowtransparency
+                          allow="autoplay"
+                        ></iframe>
+                      </div>
 
-                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter reels"
-                    style="text-align: center;">
-                    <iframe width="100%" height="375" src="https://www.youtube.com/embed/qZ0WM3Dkhu4?rel=0"
-                        title="Escudo de Veraguas / Reel" frameborder="0"
-                        allow="accelerometer; autoplay;  allowfullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+            </div>
 
-                </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter reels"
+                style="text-align: center;">
+
+                    <div class="js-player" id="player">
+                        <iframe width="100%" height="300" 
+                          src="https://www.youtube.com/embed/qZ0WM3Dkhu4?iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                          allowfullscreen
+                          allowtransparency
+                          allow="autoplay"
+                        ></iframe>
+                      </div>
+                
+
+            </div>
 
 
                 <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter flyers">
@@ -468,8 +495,7 @@ https://wpt.fyi/results/css/css-text-decor */
     <script>
         $('.lazy').Lazy({
             effect: "fadeIn",
-            effectTime: 2000,
-            threshold: 0
+            effectTime: 1000
         });
 
     </script>
