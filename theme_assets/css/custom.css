@@ -1,3 +1,10 @@
+body{
+    font-family: 'Barlow', sans-serif; 
+}
+
+.about{
+    text-align: center; margin-top:20px; margin-bottom: 50px;font-size: 20px;
+}
 .gallery-title {
     font-size: 36px;
     color: #0b58a0;
@@ -59,9 +66,10 @@ img.btn-whatsapp:hover {
     margin-bottom: 20px;
     color: #4e5559;
 }
-.introme { text-align: center;color: #4e5559;font-size: 25px;margin-bottom: -9px;}
+.introme { font-weight: 500; text-align: center;color: #4e5559;font-size: 25px;margin-bottom: -18px;}
 .me {
     font-family: 'Barlow', sans-serif; 
+    font-weight: 900;
     text-align: center;
     color: #4e5559;
     font-size: 40px;
@@ -85,14 +93,11 @@ img.btn-whatsapp:hover {
     .gallery-title{
         margin-top: 25px;
     }
-}
-
-@media (min-width: 768px) {
-    .about {
+    .about{
         font-size: 18px;
-        margin: 15px 90px;
     }
 }
+
 .rounded {
     overflow: hidden;
     -webkit-border-radius: 180px;
