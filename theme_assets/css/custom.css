@@ -15,24 +15,10 @@
 }
 .filter-button {
     font-size: 14px;
-    border: 1px solid #0b58a0;
-    border-radius: 5px;
-    text-align: center;
-    color: #0b58a0;
-    margin-bottom: 30px;
+    margin-top: -5px;
+    margin-bottom: 20px;
 }
-.filter-button:hover {
-    font-size: 14px;
-    border: 1px solid #0b58a0;
-    border-radius: 5px;
-    text-align: center;
-    color: #fff;
-    background-color: #0b58a0;
-}
-.btn-default:active .filter-button:active {
-    background-color: #0b58a0;
-    color: #fff;
-}
+
 .port-image {
     width: 100%;
 }
