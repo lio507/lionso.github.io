@@ -64,7 +64,7 @@
                     </p>
                 </div>
                 <div style="text-align: center;">
-                    <button class="btn btn-default filter-button" data-filter="all">Todos</button>
+                    <button class="btn btn-default filter-button active" data-filter="all">Todos</button>
                     <button class="btn btn-default filter-button" data-filter="flyers">Flyers</button>
                     <button class="btn btn-default filter-button" data-filter="social">Posts</button>
                     <button class="btn btn-default filter-button" data-filter="websites">Websites</button>
@@ -150,8 +150,6 @@
         });
     </script>
 
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js"
         integrity="sha512-A91aOxAVV3f8rcTRk/X47XReRLOKD0gfRQVqmSS0M/ExMbdSCh95TPo4sY7thVoJuMCfd/u2+WkhJydNUB3lUQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -161,23 +159,18 @@
             $(".filter-button").click(function () {
                 var value = $(this).attr('data-filter');
 
+                $(".filter-button").removeClass('active');
+
                 if (value == "all") {
-                    //$('.filter').removeClass('hidden');
                     $('.filter').show('1000');
+                    $(this).addClass('active');
                 }
                 else {
-                    //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-                    //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
                     $(".filter").not('.' + value).hide('3000');
                     $('.filter').filter('.' + value).show('3000');
-
+                    $(this).addClass('active');
                 }
             });
-
-            if ($(".filter-button").removeClass("active")) {
-                $(this).removeClass("active");
-            }
-            $(this).addClass("active");
 
         });
     </script>
